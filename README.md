@@ -2,16 +2,21 @@
 
 This document editor is 
 
-## Getting Started
+## Document editor app using Flutter for frontend, Socket.io for real-time collaboration, Node.js for backend, and Riverpod for state management.
+
+- Document editor app using Flutter for frontend, Socket.io for real-time collaboration, Node.js for backend, and Riverpod
+for state management.
+
+- Implement real-time collaborative editing capabilities usingFlutter for the frontend, Socket.io for real-time data
+synchronization, and Riverpod for state management with Mongo DB used as backend. This allows multiple users to
+edit documents simultaneously and saves automatically.
+
+- Design a modern and intuitive interface with Flutter, ensuring responsiveness across various devices. Include features
+like document creation, editing and formatting with real time collaboration .
+Utilize Node.js for backend operations, handling user authentication, document storage, and managing collaborative
 
 
+## Note:
+A important note for using this code is to first run **npm run dev** in server folder to configure the database.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# Document_Flutter_Editor
+Thanks!
