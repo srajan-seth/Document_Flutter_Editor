@@ -1,4 +1,4 @@
-# document_editor
+# Document Editor Application
 
 Document editor app using Flutter for frontend, Socket.io for real-time collaboration, Node.js for backend, and Riverpod for state management.
 
