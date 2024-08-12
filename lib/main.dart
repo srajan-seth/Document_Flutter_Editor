@@ -8,6 +8,7 @@ import 'package:routemaster/routemaster.dart';
 void main() {
   runApp(
     const ProviderScope(child: MyApp()),
+    //Provide Scope help me to get the riverpod throught the file
   );
 }
 
@@ -20,6 +21,7 @@ class MyApp extends ConsumerStatefulWidget {
 
 class _MyAppState extends ConsumerState<MyApp> {
   ErrorModel? errorModel;
+  //store the result of the auth check
   @override
   void initState() {
     super.initState();
@@ -31,6 +33,7 @@ class _MyAppState extends ConsumerState<MyApp> {
 
     if (errorModel != null && errorModel!.data != null) {
       ref.read(userProvider.notifier).update((state) => errorModel!.data);
+      //If the user data is successfully retrieved, the userProvider's state is updated with the new data.
     }
   }
 
@@ -42,6 +45,7 @@ class _MyAppState extends ConsumerState<MyApp> {
       theme: ThemeData(
         primarySwatch: Colors.lightBlue,
       ),
+      //the below is the state persistance and if the user.token.isNotEmpty is true means the token is available means the user is not logged out otherwise it loggedout
       routerDelegate: RoutemasterDelegate(routesBuilder: (context) {
         final user = ref.watch(userProvider);
         if (user != null && user.token.isNotEmpty) {

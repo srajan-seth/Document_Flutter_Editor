@@ -8,7 +8,7 @@ class SocketClient {
   SocketClient._internal() {
     socket = io.io(host, <String, dynamic>{
       'transports': ['websocket'],
-      'autoConnect': false,
+      'autoConnect': true,
     });
     socket!.connect();
   }

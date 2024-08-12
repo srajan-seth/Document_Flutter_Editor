@@ -4,8 +4,8 @@ import 'package:document_editor/constant.dart';
 import 'package:document_editor/models/error_model.dart';
 import 'package:document_editor/models/user_model.dart';
 import 'package:document_editor/repository/local_storage.dart';
-import 'package:google_sign_in/google_sign_in.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:http/http.dart';
 
 final authRipoProvider = Provider(

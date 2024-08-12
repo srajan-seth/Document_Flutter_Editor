@@ -20,6 +20,7 @@ class DocumentScreen extends ConsumerStatefulWidget {
     Key? key,
     required this.id,
   }) : super(key: key);
+  //super(key:key) constructor from the parent class to child class
 
   @override
   ConsumerState<ConsumerStatefulWidget> createState() =>
@@ -29,7 +30,7 @@ class DocumentScreen extends ConsumerStatefulWidget {
 class _DocumentScreen_State extends ConsumerState<DocumentScreen> {
   TextEditingController titleController =
       TextEditingController(text: 'Untitled Docusment');
-
+  //by default the name is untitled document
   quill.QuillController? _controller;
   ErrorModel? errorModel;
   SocketRepo socketRepo = SocketRepo();

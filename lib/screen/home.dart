@@ -12,6 +12,7 @@ class Homescreen extends ConsumerWidget {
 
   void signOut(WidgetRef ref) {
     ref.read(authRipoProvider).signOut();
+    //to stop the state presistance
     ref.read(userProvider.notifier).update((state) => null);
   }
 

@@ -1,6 +1,6 @@
+import 'package:document_editor/colors.dart';
 import 'package:document_editor/repository/auth_repo.dart';
 import 'package:flutter/material.dart';
-import 'package:document_editor/colors.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:routemaster/routemaster.dart';
 
