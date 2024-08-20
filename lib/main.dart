@@ -45,7 +45,8 @@ class _MyAppState extends ConsumerState<MyApp> {
       theme: ThemeData(
         primarySwatch: Colors.lightBlue,
       ),
-      //the below is the state persistance and if the user.token.isNotEmpty is true means the token is available means the user is not logged out otherwise it loggedout
+      // the below is the state persistance and if the user.token.isNotEmpty is
+      // true means the token is available means the user is not logged out otherwise it loggedout
       routerDelegate: RoutemasterDelegate(routesBuilder: (context) {
         final user = ref.watch(userProvider);
         if (user != null && user.token.isNotEmpty) {
